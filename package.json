@@ -9,6 +9,10 @@
   "keywords": [
     "Swag"
   ],
+},
+"engines": {
+  "node": ">=5.7.0"
+},
   "author": "Chengzhu Duan",
   "license": "MIT",
   "dependencies": {
