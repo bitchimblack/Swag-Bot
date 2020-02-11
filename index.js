@@ -279,8 +279,8 @@ client.on('message', message => {
             }
         });
 
-        /* 
-        * retrieve the current coins and only add additional coins if the message is send 
+        /*
+        * retrieve the current coins and only add additional coins if the message is send
         * in channels from the help category
         */
         if (message.channel.parent.name === 'Help') {
@@ -372,4 +372,4 @@ client.on('message', message => {
 });
 
 // login to Discord with your app's token
-client.login(config.token);
+client.login("Njc2NDA2NTA0NjA5NTQ2Mjcy.XkIlvA.8wRL2l0ZFNwHICM3UHOTdiZGmxU");
