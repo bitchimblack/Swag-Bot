@@ -49,15 +49,15 @@ module.exports = {
         console.log('in here');
 
         if (!GuildQueue.voiceChannel) {
-            return message.reply(' please join a voice channel first!');
+            return message.reply(' join a voice channel NIGGA!');
         }
-        
+
         GuildQueue.voiceChannel.join().then(connection => {
             const stream = ytdl('https://www.youtube.com/watch?v=' + id, { filter: 'audioonly' });
             GuildQueue.dispatcher = connection.playStream(stream);
             GuildQueue.skipReq = 0;
             GuildQueue.skippers = [];
-            
+
             GuildQueue.dispatcher.on('end', () => {
                 GuildQueue.skipReq = 0;
                 GuildQueue.skippers = [];
